@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" />
+
+    <!--Custom CSS File-->
+    <link rel="stylesheet" href="style.css">
+
+    <!--Let browser know this website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Derek's Github Website</title>
+</head>
+
+<body id="home" class="scrollspy">
+    <div class="navbar-fixed">
+        <nav class="amber">
+            <div class="container">
+                <div class="nav-wrapper">
+                    <a href="#" class="brand-logo">Derek's Website</a>
+                    <a href="#" class="sidenav-trigger" data-target="mobile-nav"><i class="material-icons">menu</i></a>
+
+                    <!-- Full version of menu -->
+                    <!--This component needs to be initialized in JavaScript-->
+                    <ul class="right hide-on-med-and-down">
+                        <li><a href="#home">Home</a></li>
+                        </li>
+                        <li><a href="#search">Search</a></li>
+                        </li>
+                        <li><a href="#popular">Popular Places</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <!-- Mobile version of menu -->
+    <!--This component (side nav-bar) needs to be initialized in JavaScript-->
+    <ul class="sidenav" id="mobile-nav">
+        <li><a href="#home">Home</a></li>
+        </li>
+        <li><a href="#search">Search</a></li>
+        </li>
+        <li><a href="#popular">Popular Places</a></li>
+    </ul>
+
+    <section class="slider">
+        <ul class="slides">
+            <li>
+                <img src="https://i.picsum.photos/id/109/1000/600.jpg"> <!-- random image -->
+                <div class="caption center-align">
+                    <h2 class="black-text">Derek Lomax</h2>
+                    <h5 class="light black-text text-lighten-3  hide-on-small-only">Desktop App Developer</h5>
+                </div>
+            </li>
+            <li>
+                <img src="https://i.picsum.photos/id/19/1000/600.jpg"> <!-- random image -->
+                <div class="caption left-align">
+                    <h2 class="black-text">Derek Lomax</h2 class="black-text">
+                    <h5 class="light black-text text-lighten-3 hide-one-small-only">Embedded Systems Engineer</h5>
+                </div>
+            </li>
+            <li>
+                <img src="https://i.picsum.photos/id/12/1000/600.jpg"> <!-- random image -->
+                <div class="caption right-align">
+                    <h2 class="black-text">Derek Lomax</h2 class="black-text">
+                    <h5 class="light black-text text-lighten-3 hide-on-small-only">Website Developer</h5>
+                </div>
+            </li>
+        </ul>
+    </section>
+
+    <footer class="section amber center white-text">
+        <p class="flow-text">Derek Lomax</p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+        //Init the sidebar nav menu
+        const sideNav = document.querySelector(".sidenav");
+        M.Sidenav.init(sideNav, {});
+
+        //Init the slider image display
+        const slider = document.querySelector('.slider');
+        M.Slider.init(slider, {
+            indicators: false,
+            height: 500,
+            transition: 500,
+            interval: 2500
+        });
+    </script>
+</body>
+
+
+
+</html>
