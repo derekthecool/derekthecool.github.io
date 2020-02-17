@@ -76,20 +76,36 @@
     </section>
 
     <section>
-        <div class="parallax-container">
-            <div class="parallax"><img src="https://i.picsum.photos/id/88/1000/600.jpg"></div>
+        <div class="row">
+            <div class="col s3">
+                <div class="parallax-container">
+                    <div class="parallax"><img src="https://i.picsum.photos/id/88/1000/600.jpg"></div>
+                </div>
+            </div>
+            <div class="col s3">
+                <div class="parallax-container">
+                    <div class="parallax"><img src="https://i.picsum.photos/id/12/1000/600.jpg"></div>
+                </div>
+            </div>
+            <div class="col s3">
+                <div class="parallax-container">
+                    <div class="parallax"><img src="https://i.picsum.photos/id/13/1000/600.jpg"></div>
+                </div>
+            </div>
+            <div class="col s3">
+                <div class="parallax-container">
+                    <div class="parallax"><img src="https://i.picsum.photos/id/14/1000/600.jpg"></div>
+                </div>
+            </div>
         </div>
-        <div class="section white">
+        <!-- <div class="section white">
             <div class="row container">
                 <h2 class="header">Parallax</h2>
                 <p class="grey-text text-darken-3 lighten-3">Parallax is an effect where the background content or image
                     in this
                     case, is moved at a different speed than the foreground content while scrolling.</p>
             </div>
-        </div>
-        <div class="parallax-container">
-            <div class="parallax"><img src="https://i.picsum.photos/id/12/1000/600.jpg"></div>
-        </div>
+        </div> -->
     </section>
 
     <footer class="section amber darken-2 center white-text">
@@ -100,9 +116,11 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script>
-        //Init the sidebar nav menu
-        const sideNav = document.querySelector(".sidenav");
-        M.Sidenav.init(sideNav, {});
+        //AutoInit() is a great way to get most things activated, very easy!!
+        M.AutoInit();
+        // //Init the sidebar nav menu
+        // const sideNav = document.querySelector(".sidenav");
+        // M.Sidenav.init(sideNav, {});
 
         //Init the slider image display
         const slider = document.querySelector('.slider');
@@ -113,10 +131,10 @@
             interval: 2500
         });
 
-        document.addEventListener('DOMContentLoaded', function () {
-            var elems = document.querySelectorAll('.parallax');
-            var instances = M.Parallax.init(elems);
-        });
+        // document.addEventListener('DOMContentLoaded', function () {
+        //     var elems = document.querySelectorAll('.parallax');
+        //     var instances = M.Parallax.init(elems);
+        // });
     </script>
 </body>
 
