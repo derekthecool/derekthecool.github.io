@@ -14,7 +14,8 @@
     <!--Let browser know this website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Derek's Github Website</title>
+    <!--TODO add icon to the title-->
+    <title>Derek Lomax's Portfolio</title>
 </head>
 
 <body id="home" class="scrollspy">
@@ -22,18 +23,8 @@
         <nav class="amber darken-2">
             <div class="container">
                 <div class="nav-wrapper">
-                    <a href="#" class="brand-logo">Derek's Website</a>
-                    <a href="#" class="sidenav-trigger" data-target="mobile-nav"><i class="material-icons">menu</i></a>
-
-                    <!-- Full version of menu -->
-                    <!--This component needs to be initialized in JavaScript-->
-                    <ul class="right hide-on-med-and-down">
-                        <li><a href="#home">Home</a></li>
-                        </li>
-                        <li><a href="#search">Search</a></li>
-                        </li>
-                        <li><a href="#popular">Popular Places</a></li>
-                    </ul>
+                    <!--TODO add image of me on top bar-->
+                    <a href="#" class="brand-logo flow-text">Derek Lomax</a>
                 </div>
             </div>
         </nav>
@@ -52,75 +43,78 @@
     <section class="slider">
         <ul class="slides">
             <li>
-                <img src="https://i.picsum.photos/id/109/1000/600.jpg"> <!-- random image -->
+                <img src="https://i.picsum.photos/id/12/1000/600.jpg"> <!-- random image -->
                 <div class="caption center-align">
-                    <h2 class="black-text">Derek Lomax</h2>
-                    <h5 class="light black-text text-lighten-3  hide-on-small-only">Desktop App Developer</h5>
+                    <h2 class="blue-text">Derek Lomax</h2>
+                    <h5 class="blue-text">Website Developer</h5>
+                    <i class="material-icons black-text large">web</i></a>
+                </div>
+            </li>
+            <li>
+                <img src="https://i.picsum.photos/id/109/1000/600.jpg"> <!-- random image -->
+                <div class="caption right-align">
+                    <h2 class="blue-text">Derek Lomax</h2>
+                    <h5 class="blue-text">Desktop App Developer</h5>
+                    <i class="material-icons black-text large">computer</i></a>
                 </div>
             </li>
             <li>
                 <img src="https://i.picsum.photos/id/19/1000/600.jpg"> <!-- random image -->
                 <div class="caption left-align">
-                    <h2 class="black-text">Derek Lomax</h2 class="black-text">
-                    <h5 class="light black-text text-lighten-3 hide-one-small-only">Embedded Systems Engineer</h5>
-                </div>
-            </li>
-            <li>
-                <img src="https://i.picsum.photos/id/12/1000/600.jpg"> <!-- random image -->
-                <div class="caption right-align">
-                    <h2 class="black-text">Derek Lomax</h2 class="black-text">
-                    <h5 class="light black-text text-lighten-3 hide-on-small-only">Website Developer</h5>
+                    <h2 class="blue-text">Derek Lomax</h2>
+                    <h5 class="blue-text">Embedded Systems Engineer</h5>
+                    <i class="material-icons black-text large">memory</i></a>
                 </div>
             </li>
         </ul>
     </section>
 
-    <section>
-        <div class="row">
-            <div class="col s3">
-                <div class="parallax-container">
-                    <div class="parallax"><img src="https://i.picsum.photos/id/88/1000/600.jpg"></div>
+
+    <!--TODO Get relvent content here, I am thinking Bentley Website, Moms shop website, MQTT server desktop app, Senior project embedded-->
+    <div class="row">
+        <div class="col s12 m6">
+            <div class="card">
+                <div class="card-image">
+                    <img src="https://i.picsum.photos/id/14/1000/600.jpg">
+                    <span class="card-title">Experience Item 1</span>
                 </div>
-            </div>
-            <div class="col s3">
-                <div class="parallax-container">
-                    <div class="parallax"><img src="https://i.picsum.photos/id/12/1000/600.jpg"></div>
+                <div class="card-content">
+                    <p>I am a very simple card. I am good at containing small bits of information.
+                        I am convenient because I require little markup to use effectively.</p>
                 </div>
-            </div>
-            <div class="col s3">
-                <div class="parallax-container">
-                    <div class="parallax"><img src="https://i.picsum.photos/id/13/1000/600.jpg"></div>
-                </div>
-            </div>
-            <div class="col s3">
-                <div class="parallax-container">
-                    <div class="parallax"><img src="https://i.picsum.photos/id/14/1000/600.jpg"></div>
+                <div class="card-action">
+                    <a href="#">This is a link</a>
                 </div>
             </div>
         </div>
-        <!-- <div class="section white">
-            <div class="row container">
-                <h2 class="header">Parallax</h2>
-                <p class="grey-text text-darken-3 lighten-3">Parallax is an effect where the background content or image
-                    in this
-                    case, is moved at a different speed than the foreground content while scrolling.</p>
+        <div class="col s12 m6">
+            <div class="card">
+                <div class="card-image">
+                    <img src="https://i.picsum.photos/id/11/1000/600.jpg">
+                    <span class="card-title">Experience Item 2</span>
+                </div>
+                <div class="card-content">
+                    <p>I am a very simple card. I am good at containing small bits of information.
+                        I am convenient because I require little markup to use effectively.</p>
+                </div>
+                <div class="card-action">
+                    <a href="#">This is a link</a>
+                </div>
             </div>
-        </div> -->
-    </section>
+        </div>
+    </div>
 
     <footer class="section amber darken-2 center white-text">
-        <p class="flow-text">Derek Lomax</p>
+        <!--TODO add contact at bottom of page-->
+        <p class="flow-text">Contact Me</p>
         <a href="" class="btn-floating pulse amber accent-2 waves-effect waves-light btn-large"><i
-                class="material-icons">phone_android</i></a>
+                class="material-icons">mail</i></a>
     </footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script>
-        //AutoInit() is a great way to get most things activated, very easy!!
+        //M.AutoInit() is a great way to get most things activated, very easy!!
         M.AutoInit();
-        // //Init the sidebar nav menu
-        // const sideNav = document.querySelector(".sidenav");
-        // M.Sidenav.init(sideNav, {});
 
         //Init the slider image display
         const slider = document.querySelector('.slider');
@@ -130,14 +124,7 @@
             transition: 500,
             interval: 2500
         });
-
-        // document.addEventListener('DOMContentLoaded', function () {
-        //     var elems = document.querySelectorAll('.parallax');
-        //     var instances = M.Parallax.init(elems);
-        // });
     </script>
 </body>
-
-
 
 </html>
